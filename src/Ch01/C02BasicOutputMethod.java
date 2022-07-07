@@ -87,6 +87,8 @@ public class C02BasicOutputMethod {
 		System.out.printf("%5s\n","*");
 		
 		
+		System.out.println("GitHub TEST");
+		
 	
 		
 	}
