@@ -26,7 +26,7 @@ public class C07리터럴상수 {
 //		System.out.println(num1);
 //		
 		//예제2
-		int num1 = 4000000000; //40억
+		int num1 = 400000000; //40억
 		long num2 = 4000000000L; //40억
 		
 	}
