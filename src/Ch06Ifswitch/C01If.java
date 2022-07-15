@@ -89,34 +89,29 @@ public class C01If {
 		
 		//문제4
 		//세 정수를 입력받아서 큰 수를 출력(if)
-//		Scanner sc = new Scanner(System.in);
-//		System.out.printf("첫번째 정수 입력 : ");
-//		int a = sc.nextInt();
-//		System.out.printf("두번째 정수 입력 : ");
-//		int b = sc.nextInt();
-//		System.out.printf("세번째 정수 입력 : ");
-//		int c = sc.nextInt();
-//		
-//		if(a>b)
-//		{
-//			if(a>c)
-//			{
-//				System.out.println("가장 큰 수 : " + a);
-//			}
-//			else
-//			{
-//				System.out.println("가장 큰 수 : " + c);
-//			}
-//		}
-//		if(b>a)
-//		{
-//			if(b>c)
-//			{
-//				System.out.println("가장 큰 수 : " + b);
-//			}
-//			else
-//				System.out.println("가장 큰 수 : " + c);
-//		}
+		Scanner sc = new Scanner(System.in);
+		System.out.printf("첫번째 정수 입력 : ");
+		int a = sc.nextInt();
+		System.out.printf("두번째 정수 입력 : ");
+		int b = sc.nextInt();
+		System.out.printf("세번째 정수 입력 : ");
+		int c = sc.nextInt();
+		
+		if(a>=b && a>=c)
+		{
+				System.out.println("가장 큰 수 : " + a);
+			}
+		else if(b>=a && b>=c)	
+		{
+			System.out.println("가장 큰 수 : " + b);
+		}
+		else
+		{
+			System.out.println("가장 큰 수 : " + c);
+		}
+
+		sc.close();
+		
 		
 		//문제5
 		//3의 배수이면서 4의 배수라면 출력
@@ -147,33 +142,71 @@ public class C01If {
 		
 
 		//국영수 점수 40이상 & 평균 60 이상이면 합격
-		Scanner sc = new Scanner(System.in);
-		System.out.print("국어 점수 : ");
-		int kor = sc.nextInt();
-		System.out.print("영어 점수 : ");
-		int eng = sc.nextInt();
-		System.out.print("수학 점수 : ");
-		int mat = sc.nextInt();
-		
-		double avg = (double)(kor+eng+mat)/3;
-		
-		if(kor>=40 & eng>=40 & mat>=40)
-		{
-			if(avg >= 60)
-			{
-				System.out.printf("평균 %f점-합격!", avg);
-			}
-			else
-			{
-				System.out.printf("평균 %f점-불합격!", avg);
-			}
-		}
-		else
-		{
-			System.out.println("점수과락-불합격");
-		}
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("국어 점수 : ");
+//		int kor = sc.nextInt();
+//		System.out.print("영어 점수 : ");
+//		int eng = sc.nextInt();
+//		System.out.print("수학 점수 : ");
+//		int mat = sc.nextInt();
+//		
+//		double avg = (double)(kor+eng+mat)/3;
+//		
+//		if(kor>=40 & eng>=40 & mat>=40)
+//		{
+//			if(avg >= 60)
+//			{
+//				System.out.printf("평균 %f점-합격!", avg);
+//			}
+//			else
+//			{
+//				System.out.printf("평균 %f점-불합격!", avg);
+//			}
+//		}
+//		else
+//		{
+//			System.out.println("점수과락-불합격");
+//		}
 		
 		//평균 점수를 입력받아 90이상이면 A 80b 70c 60d 60미만 f 출력
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("국어 점수 : ");
+//		int kor = sc.nextInt();
+//		System.out.print("영어 점수 : ");
+//		int eng = sc.nextInt();
+//		System.out.print("수학 점수 : ");
+//		int mat = sc.nextInt();
+//		
+//		double avg = (double)(kor+eng+mat)/3;
+//		
+//		if(avg>=90)
+//		{
+//			System.out.printf("평균점수 : %.1f 성적 : A", avg);
+//		}
+//		else if(avg>=80)
+//		{
+//			System.out.printf("평균점수 : %.1f 성적 : B", avg);
+//		}
+//		else if(avg>=70)
+//		{
+//			System.out.printf("평균점수 : %.1f 성적 : C", avg);
+//		}
+//		else if(avg>=60)
+//		{
+//			System.out.printf("평균점수 : %.1f 성적 : D", avg);
+//		}
+//		else 
+//		{
+//			System.out.printf("평균점수 : %.1f 성적 : F", avg);
+//		}
+//		
+		
+		
+		
+		
+		
+		
 		
 		
 		
