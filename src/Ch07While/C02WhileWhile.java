@@ -1,5 +1,7 @@
 package Ch07While;
 
+import java.util.Scanner;
+
 public class C02WhileWhile {
 
 	public static void main(String[] args) {
@@ -81,16 +83,129 @@ public class C02WhileWhile {
 //			i++;
 //		}
 
+		
+//		*
+//		**
+//		***
+//		****
+		
+//		String a = "*";
+//		int i = 0;
+//		int j = 0;
+//		
+//		while(i<4)
+//		{
+//			j = 0;
+//			while(j<=i)
+//			{
+//				System.out.print(a);
+//				j++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
+		
+		
 		//****
 		//***
 		//**
 		//*
+		
+//		String a = "*";
+//		int i = 0;
+//		int j = 0;
+//		
+//		while(i<4)
+//		{
+//			j = 0;
+//			while(j<=3-i)
+//			{
+//				System.out.print(a);
+//				j++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
 		
 		
 		//   * 
 		//  *** 
 		// *****
 		//*******
+		
+//		String a = "*";
+//		int i = 0; //행증가
+//		int j = 0; //공백
+//		int k = 0; //별
+//		
+//		while(i<4)
+//		{
+//			j=0;
+//			while(j<=2-i)
+//			{
+//				System.out.print(" ");
+//				j++;
+//				
+//				}
+//			k = 0;
+//			while(k<=(2*i))
+//			{
+//				System.out.print(a);
+//				k++;
+//			}
+//				System.out.println();
+//				i++;
+//		}
+		
+		//*******
+		// *****
+		//  ***
+		//   *
+		
+//		String a = "*";
+//		int i = 0; //행증가
+//		int j = 0; //공백
+//		int k = 0; //별
+//		
+//		while(i<4)
+//		{
+//			j=0;
+//			while(j<=i-1)
+//			{
+//				System.out.print(" ");
+//				j++;
+//				
+//				}
+//			k = 0;
+//			while(k<=6-(2*i))
+//			{
+//				System.out.print(a);
+//				k++;
+//			}
+//				System.out.println();
+//				i++;
+//		}
+//		
+		
+		//문제
+		Scanner sc = new Scanner(System.in);
+		//높이 입력받아 출력하는 직각삼각형
+		int h = sc.nextInt();
+		
+		
+		
+		//높이 입력받아 출력하는 직각역삼각형
+		//높이 입력받아 출력하는 정삼각형
+		//높이 입력받아 출력하는 역삼각형
+		//높이 입력받아 출력하는 다이아몬드
+		//높이 입력받아 출력하는 모래시계
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
