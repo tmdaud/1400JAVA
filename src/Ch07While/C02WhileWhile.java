@@ -190,14 +190,83 @@ public class C02WhileWhile {
 		//문제
 		Scanner sc = new Scanner(System.in);
 		//높이 입력받아 출력하는 직각삼각형
-		int h = sc.nextInt();
-		
-		
+//		int h = sc.nextInt();
+//		int i = 0;
+//		int j = 0;
+//		
+//		while(i<h)
+//		{
+//			j = 0;
+//			while(j<=i)
+//			{
+//				System.out.print("*");
+//				j++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
 		
 		//높이 입력받아 출력하는 직각역삼각형
+//		int h = sc.nextInt();
+//		int i = 0;
+//		int j = 0;
+//		
+//		while(i<h)
+//		{
+//			j = 0;
+//			while(j<h-i)
+//			{
+//				System.out.print("*");
+//				j++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
+		
 		//높이 입력받아 출력하는 정삼각형
 		//높이 입력받아 출력하는 역삼각형
 		//높이 입력받아 출력하는 다이아몬드
+		int i=0;
+		int j=0;
+		int k=0;
+		
+		while(i<7)
+		{
+			if(i<=3)
+			{
+				j=0; //공백
+				while(j<=2-i)
+				{
+					System.out.print(" ");
+					j++;
+				}
+				k=0; //별
+				while(k<=2*i)
+				{
+					System.out.print("*");
+					k++;
+				}
+			}
+			else
+			{
+				j=0; //공백
+				while(j<=i-4)
+				{
+					System.out.print(" ");
+					j++;
+				}
+				k=0; //별
+				while(k<=12-(2*i))
+				{
+					System.out.print("*");
+					k++;
+				}
+			}
+			
+			System.out.println();
+			i++;
+		}
+		
 		//높이 입력받아 출력하는 모래시계
 		
 		
