@@ -11,17 +11,20 @@ class Rectangle
 	{
 		this.x=x;this.y=y;this.width=width;this.height=height;
 	}
-	int square(int width, int height)
+	int square()
 	{
 		return width*height;
 	}
-	void show(int x, int y, int square)
+	void show()
 	{
-		System.out.printf("%d %d %d",x,y,square);
+		System.out.printf("(%d, %d)에서 크기가 %dx%d인 사각형\n",x,y,width,height);
 	}
-	boolean contatins(int r)
+	boolean contains(Rectangle r)
 	{
-		if
+		if((this.x<r.x && this.y<r.y) && ((this.width+this.x)>(r.width+r.x) && (this.height+this.y)>(r.height+r.y))) {
+			return true;
+		}
+		return false;
 	}
 }
 	
