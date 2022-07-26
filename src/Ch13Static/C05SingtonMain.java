@@ -28,15 +28,15 @@ class Refrigerator
 		if(instance==null)
 		{
 			instance=new Refrigerator();
-			return instance;
 		}
+		return instance;
 	}
 	private Refrigerator() {}
 	
 	
 		
-	Product [] list = new Product[100];
-	int ProductNum = 0;
+	Product [] list = new Product[100]; //->컬렉션으로 처리시 메모리 허용범위내에서 확장가능
+	int ProductNum = 0; //idx, 상품개수
 	
 	void SetProduct(Product product) {
 		if(ProductNum<=99) {
@@ -59,18 +59,22 @@ class Refrigerator
 		if(ProductNum != 0)
 		{
 			for(int i =0;i<ProductNum;i++) {
-				if(list[i].PName.equals(search))
+				if(list[i].PName.equals(search)) //일치하는 제품이 있다면
 				{
-					//일치하는 제품이 있다면
-					if(list[i].amount==amount)
+					if(list[i].amount==amount) //재고량 == 요청수량
 					{
-						//재고량 == 요청수량
+						Product prod=list[i];
+						
 						//list에서 제품삭제(자료구조..삭제처리 -> 컬렉션)
-						//return Product
+						for(int j=i+1;j<ProductNum;j++) {
+							list[j-1]=list[j];
+						}
+						list[ProductNum-1]=null;
+						ProductNum--;
+						return prod;
 					}
-					else if(list[i].amount<amount)
+					else if(list[i].amount<amount) //재고량 > 요청수량
 					{
-						//재고량 > 요청수량
 						//수량 감소
 						list[i].amount = list[i].amount-amount;
 						//Product 객체 생성
@@ -90,7 +94,6 @@ class Refrigerator
 		//-Product객체를 따로 만들어 수량 분배하여 리턴
 		//만약 제품이 검색되고 수량이 저장된 수량과 같다면 list안의 내용물삭제후
 		//제품 리턴
-		return null;
 	}
 }
 
@@ -102,14 +105,19 @@ public class C05SingtonMain {
 				
 		//상품정보객체 생성 
 		Product prod = new Product("콜라",5);
+		Product prod2 = new Product("사이다",5);
 				
 		//냉장고에 상품저장
 		refrigerator.SetProduct(prod);
+		refrigerator.SetProduct(prod2);
 
 		//냉장고에 상품반환
-		Product prod1 =refrigerator.GetProduct("사이다",1); 
+		Product prod1 =refrigerator.GetProduct("콜라",5); 
 						
 		System.out.println("get Item : " + prod1.toString());
+		for(int i=0;i<refrigerator.list.length;i++) {
+			System.out.println(refrigerator.list[i].toString());
+		}
 
 	}
 
