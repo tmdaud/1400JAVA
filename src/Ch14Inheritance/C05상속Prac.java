@@ -36,7 +36,7 @@ public class C05상속Prac {
 		//1 다음 main() 메서드와 실행 결과를 참고하여 TV를 상속받은 ColorTV 클래스 작성
 		ColorTV myTV=new ColorTV(32,1024);
 		myTV.printProperty();
-		//->출력결과
+		//->출력결  과
 		//32인치 1024컬러
 		
 		//2 다음 main() 메서드와 실행 결과를 참고하여 ColorTV를 상속받은 IPTV 클래스 작성
