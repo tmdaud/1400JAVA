@@ -20,10 +20,10 @@ interface G
 {
 	
 }
-class E extends A,B
-{
-	
-}
+//class E extends A,B
+//{
+//	
+//}
 class F implements C,D,G
 {
 	
